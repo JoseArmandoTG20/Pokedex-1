@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+  text-align: center;  
+  font-family: 'Lato', sans-serif;
+  font-size: 95px;
+  color: white;
+  
+}
+
+.contenedor{
+    width: auto;
+    height: 110px;
+    background-color: red;
+}
+
+.buscador{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+input{
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+input[type="text"]{
+  background: #fff;
+  width: 340px;
+  height: 50px;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+}
+
+input[type="submit"]{
+  left: -5px;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  border-radius: 0 25px 25px 0;
+  background-color: red;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/*---Carta Pokemon---*/
+.carta-pokemon{
+  position: relative;
+  height: fit-content;
+  font-family: 'Lato', sans-serif;
+  max-width: 300px;
+  border-radius: 4px;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #FFF;
+  border: 1px solid black;
+  top: 70px;
+}
+
+.carta-pokemon::before {
+  content: '';
+  background-size: 3px 3px;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: -1;
+}
+
+.contenedor-imagen{
+  position: relative;
+  width: 180px;
+  margin: 10px auto;
+}
+
+.status-pokemon div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.tipos-pokemon div {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 1px dashed black;
+}
+
+.imagen-pokemon {
+  width: 180px;
+  border-radius: 50%;
+}

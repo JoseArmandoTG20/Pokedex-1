@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./src/imagenes/logo-pokeball.png" />
+    <title>POKEDEX</title>
+    <link href="./src/css/general.css" rel="stylesheet" />
+    <script src="./src/javascript/general.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>POKEDEX</h1>
+    </div>
+
+    <div class="buscador">
+        <input type="text" id="busquedaPokemon" placeholder="Buscar Pokemon">
+        <input type="submit" id="botonBusqueda" value="Buscar">
+    </div>
+
+    <div data-poke-card class="carta-pokemon">
+        <div data-poke-name>POKEMON</div>
+        <div data-poke-img-container class="contenedor-imagen">
+            <img data-poke-img class="imagen-pokemon" src="./src/imagenes/logo-pokeball.png"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="tipos-pokemon"></div>
+        <div data-poke-stats class="status-pokemon"></div>
+    </div>
+</body>
+</html>
